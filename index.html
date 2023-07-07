@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">  
+</head>
+<body>
+    <div id="cal">
+        <form name="calc">
+            <input type="display" name="Answers">
+            <br><br>
+            <input  class="buttons" type="button" value="1" onclick="calc.Answers.value+='1'">
+            <input class="buttons" type="button" value="2" onclick="calc.Answers.value+='2'">
+            <input class="buttons" type="button" value="3" onclick="calc.Answers.value+='3'">
+            <input class="buttons" type="button" value="+"  onclick="calc.Answers.value+='+'">
+            <br>
+            <input class="buttons" type="button" value="4" onclick="calc.Answers.value+='4'">
+            <input class="buttons" type="button" value="5" onclick="calc.Answers.value+='5'">
+            <input class="buttons" type="button" value="6"  onclick="calc.Answers.value+='6'">
+            <input  class="buttons" type="button" value="-" onclick="calc.Answers.value+='-'">
+            <br>
+            <input class="buttons"  type="button" value="7" onclick="calc.Answers.value+='7'">
+            <input class="buttons" type="button" value="8" onclick="calc.Answers.value+='8'">
+            <input class="buttons" type="button" value="9" onclick="calc.Answers.value+='9'">
+            <input  class="buttons"type="button" value="*" onclick="calc.Answers.value+='*'">
+            <br>
+            <input  class="buttons" type="button" value="/" onclick="calc.Answers.value+='/'">
+            <input  class="buttons" type="button" value="0" onclick="calc.Answers.value+='0'">
+            <input  class="buttons" type="button" value="." onclick="calc.Answers.value+='.'">
+            <input  class="buttons" type="button" value="%" onclick="calc.Answers.value+='%'">
+            <br>
+            <input id="clearbuttons" type="button" value="cancel" onclick="calc.Answers.value+=''">
+            <input  id="equalbuttons" type="button" value="=" onclick="calc.Answers.value=eval(calc.Answers.value)">
+        </form>
+    </div>
+</body>
+</html>
